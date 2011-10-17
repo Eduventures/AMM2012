@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>#{@title}</title>
+
+        #{css('reset')}
+        #{css('grid')}
+        #{css('layout')}
+        #{css('text')}
+    </head>
+    <body>
+        <div class="container">
+            <div id="container" class="row">
+            <div id="banner"></div>
+                <!-- Top part, contains the navigation menu -->
+                <div id="top" class="grid_12">
+                
+                    <nav class="grid_6 last">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="/">Home </a>
+                                </li>
+                                <li><img style="margin-top:4px;" src="../images/div.png"></li>
+                            <li>
+                                <a href="/agendas">
+                                    Agendas
+                                </a> 
+                            </li>
+                            <li><img style="margin-top:4px;" src="../images/div.png"></li>
+                            <li>
+                                <a href="/sponsors">
+                                    Sponsors
+                                </a>
+                            </li>
+                             <li><img style="margin-top:4px;" src="../images/div.png"></li>
+                            <li>
+                                <a href="/hotel">
+                                    Hotel Information
+                                </a>
+                            </li>
+                             <li><img style="margin-top:4px;" src="../images/div.png"></li>
+                            <li>
+                                <a href="/visiting">
+                                    Visiting Boston
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div id="content" class="grid_12">
+                    <div id="leftcontent" class="grid_13">
+
+                    #{@content}
+                    </div>
+                    <div id="sidebar" class="grid_14">
+                    <h3><center>Sidebar Title</center></h3><br>
+                
+                    <p>Sidebar content</p>
+                    </div>
+
+                
+
+                    <div id="sidebar" class="grid_14">
+                    <h3><center>Sidebar Title</center></h3><br>
+                
+                    <p>Sidebar content</p>
+                    </div>
+
+                </div>
+                <footer id="footer">
+                <p class="footer">
+            Eduventures, Inc. | 101 Federal Street, 12th Floor | Boston, MA 02110 | 617-426-5622<br>
+Copyright © 2011 Eduventures, Inc. All rights reserved.
+                </p>
+            </footer>
+            </div>
+
+        </div>
+    </body>
+</html>

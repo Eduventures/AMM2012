@@ -1,0 +1,119 @@
+/**
+ * Stylesheet used for the layout of most elements.
+ *
+ * @author Yorick Peterse
+ * @link   http://yorickpeterse.com/
+ */
+#container
+{
+	border-radius: 10px;
+	margin:  40px auto;
+	width:   940px;
+	box-shadow: 0 0 5px 5px #808080;
+	border: 5px solid #f5f5f5;
+}
+
+#content
+{
+	background:    #fff;
+	width:         940px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+
+#leftcontent
+{
+    background:    #ededed;
+    padding:       5px;
+    border: 1px solid #ababab;
+    border-radius: 5px;
+}
+
+#sidebar
+{
+	margin-left: 20px;
+    margin-bottom: 15px;
+    padding-top: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+	border: 1px solid #ababab;
+	border-radius: 5px;
+	background-color: #ededed;
+	background-image: url(../images/sidebar-top.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+/* Top part of the website, contains the title and the navigation menu */
+#banner
+{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-image: url(../images/banner.png);
+    height: 158px;
+}
+
+#top
+{
+	background-image: url(../images/nav.png);
+	background-repeat: repeat-x;
+	height:        27px;
+	padding:       0px 10px;
+	background-position: center bottom;
+}
+
+    #top header h1
+    {
+        color:       #fff;
+        font-size:   38px;
+        margin:      10px 0px 0px 0px;
+        padding:     0px;
+    }
+
+    #top nav ul
+    {
+	float:        left;
+	margin-right: 15px;
+    }
+
+        #top nav ul li
+        {
+	float:           left;
+	font-size:       14px;
+	font-weight:     bold;
+	list-style-type: none;
+	margin-right:    10px;
+        }
+
+        #top nav ul li:last-child
+        {
+            margin-right: 0px;
+        }
+
+            #top nav ul li a
+            {
+                color:           #fff;
+                display:         block;
+                height:          27px;
+                padding:         2px 10px 0px 10px;
+                text-decoration: none;
+            }
+
+            #top nav ul li a:hover
+            {
+                background-image: url(../images/nav-h.png);
+                background-repeat: repeat-x;
+            }
+
+/* Footer at the bottom of the page */
+#footer
+{
+	background: #e6e6e6;
+	width: 940px;
+	padding: 15px;
+	text-align: center;
+	clear: both;
+	float: none;
+}
