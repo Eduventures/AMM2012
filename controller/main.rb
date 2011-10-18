@@ -14,6 +14,22 @@ class MainController < Controller
     @title = 'Eduventures AMM 2012'
   end
 
+  def agendas
+    @title = 'Agendas | Eduventures AMM 2012'
+  end
+
+  def sponsors
+    @title = 'Sponsors | Eduventures AMM 2012'
+  end
+
+  def hotel
+    @title = 'Hotel Information | Eduventures AMM 2012'
+  end
+
+  def visiting
+    @title = 'Visiting Boston | Eduventures AMM 2012'
+  end
+
   # the string returned at the end of the function is used as the html body
   # if there is no template for the action. if there is a template, the string
   # is silently ignored
