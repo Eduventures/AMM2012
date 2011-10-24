@@ -15,6 +15,14 @@
 # executed:
 #
 #  $ chmod +x ./start.rb
-require File.expand_path('../app', __FILE__)
+require 'rubygems'
+require 'ramaze'
 
-Ramaze.start(:adapter => :webrick, :port => 7000, :file => __FILE__)
+class MainController < Ramaze::Controller
+	def index
+		'Hello, world'
+	end
+end
+
+port = `ps ux | grep #{$$}`.match(/\-p (\d+)/)[1]
+Ramaze.start :adapter => :thin, :port => port
