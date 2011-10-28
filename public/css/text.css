@@ -18,7 +18,14 @@ p
     line-height:   22px;
     margin-bottom: 20px;
 }
-
+.announcement
+{
+    color:       #000;
+    font-family: Arial, sans-serif;
+    font-size:   12px;
+    font-weight: bold;
+    line-height: 14px;
+}
 a
 {
     color: #444;
