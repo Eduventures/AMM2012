@@ -37,11 +37,13 @@ ol
 ul
 {
     margin-left: 18px;
+    display: inline;
 }
 
     ul li
     {
-        list-style-type: disc;
+        display: inline;
+        margin-right: 10px;
     }
 
 ul, ol
