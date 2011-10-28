@@ -64,6 +64,34 @@
 	background-position: center bottom;
 }
 
+#top ul li a
+{
+    color:           #fff;
+    height:          27px;
+    padding:         3px 10px 10px 10px;
+    text-decoration: none;
+}
+ #top ul li a:hover
+            {
+                background-image: url(../images/nav-h.png);
+                background-repeat: repeat-x;
+            }
+
+    #top ul
+    {
+    float:        left;
+    margin-right: 15px;
+    }
+
+        #top ul li
+        {
+    float:           left;
+    font-size:       14px;
+    font-weight:     bold;
+    list-style-type: none;
+    margin-right:    10px;
+        }
+
     #top header h1
     {
         color:       #fff;
