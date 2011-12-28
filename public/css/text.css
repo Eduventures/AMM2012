@@ -6,7 +6,9 @@
  */
 body
 {
-    background:  #ababab;
+    background: url(../images/evbg.jpg) repeat-x 0 0;
+    background-position: center top;
+    background-attachment: fixed;
     color:       #444;
     font-family: Arial, sans-serif;
     font-size:   14px;
