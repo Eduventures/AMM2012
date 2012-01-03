@@ -120,6 +120,8 @@ code
 }
 .footer
 {
+    padding: 12px;
+    background: #e6e6e6;
     font-family: Arial;
     font-weight: bold;
     font-size: 12px;
