@@ -123,6 +123,8 @@
 	float:        left;
 	margin-right: 15px;
     margin-left: 160px;
+    list-style-type: none;
+    line-height: 22px;
     }
 
         #top nav ul li
@@ -131,8 +133,6 @@
 	font-size:       14px;
 	font-weight:     bold;
 	margin-right:    10px;
-    list-style-type: none;
-    margin-top: 3px;
 
         }
 
