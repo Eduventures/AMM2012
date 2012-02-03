@@ -107,7 +107,6 @@
     float:           left;
     font-size:       14px;
     font-weight:     bold;
-    list-style-type: none;
     margin-right:    10px;
         }
 
@@ -123,6 +122,7 @@
     {
 	float:        left;
 	margin-right: 15px;
+    margin-left: 160px;
     }
 
         #top nav ul li
@@ -130,8 +130,10 @@
 	float:           left;
 	font-size:       14px;
 	font-weight:     bold;
-	list-style-type: none;
 	margin-right:    10px;
+    list-style-type: none;
+    margin-top: 3px;
+
         }
 
         #top nav ul li:last-child
@@ -157,9 +159,19 @@
 /* Footer at the bottom of the page */
 #footer
 {
-	background: #e6e6e6;
+    color: #FFFFFF;
+	background: #666666;
 	width: 940px;
 	text-align: center;
 	clear: both;
 	float: none;
+}
+
+#quotes
+{
+    background: #FFFFFF;
+    width: 260px;
+    padding-left:5px;
+    border: 2px solid #666666;
+    border-radius: 5px;
 }
