@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>#{@title}</title>
+
+        #{css('reset')}
+        #{css('grid')}
+        #{css('layout')}
+        #{css('text')}
+    </head>
+    <body>
+        <div class="container">
+            <div id="container" class="row">
+            <a href="/"><img align="left" src="../images/ammbanner.jpg"></a>
+                <!-- Top part, contains the navigation menu -->
+                <div id="top" class="grid_12">
+                
+                    <nav class="grid_6 last">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="/">Home</a>
+                                </li>
+                                <li><img style="margin-top:4px;" src="../images/div.png"></li>
+                            <li>
+                                <a href="/agendas">
+                                    Agendas
+                                </a> 
+                            </li>
+                            <li><img style="margin-top:4px;" src="../images/div.png"></li>
+                            <li>
+                                <a href="/sponsors">
+                                    Sponsors
+                                </a>
+                            </li>
+                             <li><img style="margin-top:4px;" src="../images/div.png"></li>
+                            <li>
+                                <a href="/hotel">
+                                    Hotel Information
+                                </a>
+                            </li>
+                             <li><img style="margin-top:4px;" src="../images/div.png"></li>
+                            <li>
+                                <a href="/visiting">
+                                    Visiting Boston
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div id="content" class="grid_12">
+                    <div id="leftcontent" class="grid_13">
+
+                    #{@content}
+                    </div>
+                
+
+
+                    <div id="sidebar" class="grid_14">
+                    <h3 style="padding-bottom:8px;"><center>Follow Us</center></h3>              
+                    <a href="http://www.facebook.com/Eduventures" target="_blank"><img style="margin-left:14px;" src="../images/fb2.png"></a><a href="http://www.twitter.com/eduventuresinc" target="_blank"><img style="margin-left:13px;" src="../images/tw2.png"></a><a href="http://www.linkedin.com/groups?gid=1949273" target="_blank"><img style="margin-left:13px;" src="../images/li2.png"></a><br>
+                    <center><a href="https://twitter.com/#!/search/realtime/%23AMM2012" target="_blank">#AMM2012</a> </center>
+                    </div>
+
+
+                
+
+                    
+
+
+                <div id="sidebar" class="grid_14">
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;Meeting Fact</h3>
+                    <p class="announcement" style="padding-left:2px;"><br>In 2011, over 275 attendees from higher education member institutions across <br>the U.S. attended the Annual Member Meeting in Boston. We’re looking forward to the 2012 event!</p>
+                    </div>
+
+
+<div id="sidebar" class="grid_14">
+                    <h3><center>Sponsors</center></h3>
+                        <center>
+                        <span style="font-weight:bold;text-decoration:underline;">Gold</span><br><a href="http://www.embanetcompass.com" target="_blank"><img src="../images/embanet.png" ></a><br><br>
+<span style="font-weight:bold;text-decoration:underline;">Silver</span><br>
+<a href="http://www.learninghouse.com" target="_blank"><img src="../images/learninghouse.png" ></a><br>
+
+<a href="http://www.eseserves.org/" target="_blank"><img src="../images/excelsior.png" ></a><br>
+<a href="http://www.pearsoned.com/" target="_blank"><img src="../images/pearson.png" ></a><br>
+<span style="font-weight:bold;text-decoration:underline;">Bronze</span><br>
+<a href="http://www.turningtechnologies.com/" target="_blank"><img src="../images/turningtechnologies.png" ></a><br>
+
+<p style="font-size:12px;">
+                 <a href="../AMM_Sponsorship_4pgs_email_version.pdf" target="_blank">Sponsorship Brochure</a> Contact: <a href="mailto:ebassett@eduventures.com">Eric Bassett</a></p></center>
+                    </div>
+                </div>
+                <footer id="footer"><center>
+                <p class="footer">
+            Eduventures, Inc. | 101 Federal Street, 12th Floor | Boston, MA 02110 | 617-426-5622<br>
+Copyright © 2011 Eduventures, Inc. All rights reserved.
+                </p></center>
+            </footer>
+            </div>
+
+        </div>
+    </body>
+</html>
