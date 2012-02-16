@@ -7,6 +7,7 @@
  * the grid. Along with these minor fixes I also renamed all grid classes to the names
  * used by the 960 grid system as I find "grid_6" easier to write than "sixcol".
  */
+
 .container
 {
     overflow:      hidden;
