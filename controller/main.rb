@@ -30,7 +30,6 @@ class MainController < Controller
     @title = 'Visiting Boston | Eduventures AMM 2012'
   end
 
-
   # the string returned at the end of the function is used as the html body
   # if there is no template for the action. if there is a template, the string
   # is silently ignored
