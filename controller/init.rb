@@ -4,17 +4,9 @@
 
 class Controller < Ramaze::Controller
   layout :default
-  helper :xhtml, :user
+  helper :xhtml
   engine :etanni
 end
-
-private
-
-def login_first
-	return if logged_in?
-	redirect MainController.r(:login)
-end
-
 
 # Here you can require all your other controllers. Note that if you have multiple
 # controllers you might want to do something like the following:
