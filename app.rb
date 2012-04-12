@@ -4,6 +4,7 @@
 # It will be required from either `config.ru` or `start.rb`
 require 'rubygems'
 require 'ramaze'
+require 'sequel'
 
 # Make sure that Ramaze knows where you are
 Ramaze.options.roots = [__DIR__]
@@ -11,3 +12,4 @@ Ramaze.options.roots = [__DIR__]
 # Initialize controllers and models
 require __DIR__('model/init')
 require __DIR__('controller/init')
+DB = Sequel.connect('sqlite://tutorial.db3')
