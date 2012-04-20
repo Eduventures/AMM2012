@@ -18,6 +18,10 @@ class MainController < Controller
     @title = 'Agendas | Eduventures AMM 2012'
   end
 
+  def registration
+    @title = 'Registration | Eduventures AMM 2012'
+  end
+  
   def sponsors
     @title = 'Sponsors | Eduventures AMM 2012'
   end
