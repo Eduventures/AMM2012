@@ -1,0 +1,19 @@
+#{flashbox}
+<p>
+Please login below to view the Presentations. 
+</p>
+
+<form id="login" method="post">
+    <label for="password">Password</label>
+    <input type="password" name="password" />
+
+    <br /><br />
+
+    <input type="submit" value="Login" />
+</form>
+
+<?r if session[:logged_in] ?>
+
+    <p>This will only be displayed if you are logged in.</p>
+
+<?r end ?>

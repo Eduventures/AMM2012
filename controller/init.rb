@@ -4,7 +4,7 @@
 
 class Controller < Ramaze::Controller
   layout :default
-  helper :xhtml
+  helper :xhtml, :flash
   engine :etanni
 end
 
@@ -14,5 +14,5 @@ end
 #  Dir.glob('controller/*.rb').each do |controller|
 #    require(controller)
 #  end
-#
+
 require __DIR__('main')
