@@ -1,4 +1,20 @@
-<h1>Presentations</h1>
 <p>
-Please <a href="register.xhtml">Register</a> or <a href="login.xhtml">Login </a>to view the Presentations. 
+Please login below to view the Presentations. 
 </p>
+
+<form action="authenticate" method="POST">
+    <label for="password">Password</label>
+    <input type="password" name="password" />
+
+    <br /><br />
+
+    <input type="submit" value="Login" />
+</form>
+
+Logged in? #{@logged_in}
+
+ <?r if session[:logged_in] ?>
+
+    <p>This will only be displayed if you are logged in.</p>
+	
+	<?r end ?>
