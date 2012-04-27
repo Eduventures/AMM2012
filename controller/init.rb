@@ -4,7 +4,7 @@
 
 class Controller < Ramaze::Controller
   layout :default
-  helper :xhtml, :flash
+  helper :xhtml, :flash, :link
   engine :etanni
 end
 

@@ -1,20 +1,31 @@
+#{flashbox}
+
+<?r if session[:logged_out] == true ?>
 <p>
 Please login below to view the Presentations. 
 </p>
 
-<form action="authenticate" method="POST">
+<form id="login" method="post">
     <label for="password">Password</label>
     <input type="password" name="password" />
 
     <br /><br />
 
     <input type="submit" value="Login" />
+
+    <br><br>
+<?r end ?>
+
 </form>
 
-Logged in? #{@logged_in}
+<?r if session[:logged_in] == true ?>
 
- <?r if session[:logged_in] ?>
+<p>This will only be displayed if you are logged in.</p>
 
-    <p>This will only be displayed if you are logged in.</p>
-	
-	<?r end ?>
+
+<a href="logout">
+click here to logout</a>
+
+<?r end ?>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

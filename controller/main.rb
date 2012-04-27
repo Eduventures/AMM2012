@@ -8,8 +8,35 @@
 #  map '/otherurl'
 #
 # this will force the controller to be mounted on: /otherurl.
+
 class MainController < Controller
   # the index action is called automatically when no other action is specified
+  
+  
+
+   def presentations
+    if  request.post?
+        flash[:error] = "Post Detected"
+        password = request[:password]
+          if password = 'ammpre'
+          session[:logged_in] = true
+          session[:logged_out] = false
+          flash[:error] = "Password Accepted"
+            else
+            flash[:error] = "Password Incorrect"
+            redirect rs(:index)
+            end
+        else
+        flash[:error] = "No Post Detected"
+    end
+  end
+
+  def logout
+  session[:logged_in] = false
+  session[:logged_out] = true
+  redirect rs (:presentations)
+  end
+
 
   def index
     @title = 'Eduventures AMM 2012'
