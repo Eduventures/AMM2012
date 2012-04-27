@@ -1,8 +1,13 @@
-<p>
-Please login below to view the Presentations. 
-</p>
 
-<form action="authenticate" method="POST">
+<div style="background-color:yellow !important;">#{flashbox}</div>
+
+
+<?r if not session[:logged_in] or session[:logged_in] == false ?>
+
+	<p>Please login below to view the Presentations. </p>
+
+
+	<form id="login" method="post">
     <label for="password">Password</label>
     <input type="password" name="password" />
 
@@ -11,10 +16,10 @@ Please login below to view the Presentations.
     <input type="submit" value="Login" />
 </form>
 
-Logged in? #{@logged_in}
+<?r elsif session[:logged_in] == true ?>
 
- <?r if session[:logged_in] ?>
+ 	<p>This will only be displayed if you are logged in.</p>
+ 	<p>Blah blah blah blah blah blah </p>
 
-    <p>This will only be displayed if you are logged in.</p>
-	
-	<?r end ?>
+ 	<p>Or, you can #{MainController.a('Logout', :preslogout)}</p> 
+<?r end ?>

@@ -35,11 +35,34 @@ class MainController < Controller
     @title = 'Visiting Boston | Eduventures AMM 2012'
   end
 
+  def presentations
+     @title = 'Presentation Materials | Eduventures AMM 2012'
+      if  request.post?
+          flash[:message] = "Post Action Detected"
+          @password = request[:password]
+          if @password == 'ammpre'
+              session[:logged_in] = true
+              flash[:message] = "Password Accepted"
+          else
+              flash[:error] = "Password Incorrect"
+              session[:logged_in] = false
+          end
+          #redirect rs(:presentations)
+      else
+          flash[:message] = "No Post Action Detected"
+      end
+  end
+
+  def preslogout
+      session[:logged_in] = false 
+      flash[:error] = "Logged Out"
+      redirect rs(:presentations)  
+  end
   # the string returned at the end of the function is used as the html body
   # if there is no template for the action. if there is a template, the string
   # is silently ignored
   def notemplate
-    @title = 'Eduventures AMM 2012'
+    @title = 'Missing / Bad Page - Eduventures AMM 2012'
     
     return 'There is no \'notemplate.xhtml\' associated with this action.'
   end
