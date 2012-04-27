@@ -30,7 +30,6 @@ class MainController < Controller
         else
         flash[:error] = "No Post Detected"
         session[:logged_out] = true
-        session[:logged_in] = false
     end
   end
 
