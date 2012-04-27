@@ -24,7 +24,6 @@ class MainController < Controller
           flash[:error] = "Password Accepted"
             else
             flash[:error] = "Password Incorrect"
-            redirect rs(:index)
             session[:logged_out] = true
             session[:logged_in] = false
             end
