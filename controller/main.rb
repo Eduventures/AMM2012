@@ -18,7 +18,7 @@ class MainController < Controller
     if  request.post?
         flash[:error] = "Post Detected"
         password = request[:password]
-          if password = 'ammpre'
+          if password == 'ammpre'
           session[:logged_in] = true
           session[:logged_out] = false
           flash[:error] = "Password Accepted"
