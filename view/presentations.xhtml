@@ -1,6 +1,6 @@
 #{flashbox}
 
-<?r if session[:logged_out] == true ?>
+<?r if not session[:logged_in] ?>
 <p>
 Please login below to view the Presentations. 
 </p>
@@ -32,8 +32,8 @@ Click the links below to download the presentations:<br><br>
 
 
 <a href="#">Presentation 3</a><br><br>
-<a href="logout">
-click here to logout</a>
+
+#{MainController.a('Click here to Logout', :logout)}
 
 <?r end ?>
 
