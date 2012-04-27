@@ -20,18 +20,22 @@ class MainController < Controller
         password = request[:password]
           if password == '@mm2012'
           session[:logged_in] = true
+          session[:wrong_pw] = false
           flash[:error] = "Password Accepted"
             else
             flash[:error] = "Password Incorrect"
+            session[:wrong_pw] = true
             session[:logged_in] = false
             end
         else
         flash[:error] = "No Post Detected"
+        session[:wrong_pw] = false
     end
   end
 
   def logout
   session[:logged_in] = false
+  session[:wrong_pw] = false
   redirect rs (:presentations)
   end
 
