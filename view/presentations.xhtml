@@ -1,0 +1,47 @@
+<h1>Presentations</h1>
+
+<?r if not session[:logged_in] ?>
+<p>
+Please login below to view the Presentations. 
+</p>
+
+<form id="login" method="post">
+    <label for="password">Password</label>
+    <input type="password" name="password" />
+
+    <br /><br />
+
+    <input type="submit" value="Login" />
+
+    <br><br>
+<?r end ?>
+
+<?r if session[:wrong_pw] == true ?>
+<p>
+You have entered an incorrect password
+</p>
+<?r end ?>
+</form>
+
+<?r if session[:logged_in] == true ?>
+
+<p>You have successfuly logged in.
+
+Click the links below to download the presentations:<br><br>
+
+
+
+
+<a href="#">Presentation 1</a><br>
+
+
+<a href="#">Presentation 2</a><br>
+
+
+<a href="#">Presentation 3</a><br></p>
+
+#{MainController.a('Click here to Logout', :logout)}
+
+<?r end ?>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

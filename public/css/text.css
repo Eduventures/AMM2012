@@ -1,0 +1,121 @@
+/**
+ * Stylesheet used for styling headings, links, etc.
+ *
+ * @author Yorick Peterse
+ * @link   http://yorickpeterse.com/ 
+ */
+body
+{
+    background: url(../images/evbg.jpg) repeat-x 0 0;
+    background-position: center top;
+    background-attachment: fixed;
+    color:       #444;
+    font-family: Arial, sans-serif;
+    font-size:   14px;
+}
+
+p
+{
+    font-size:     14px;
+    line-height:   22px;
+    margin-bottom: 20px;
+}
+.announcement
+{
+    word-wrap:   break-word;
+    color:       #000;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size:   12px;
+    line-height: 12px;
+}
+a
+{
+    color: #444;
+}
+
+ol
+{
+    margin-left: 20px;
+}
+
+    ol li
+    {
+        list-style-type: decimal;
+    }
+
+ul
+{
+    margin-left:20px;
+}
+
+a:hover, h1 a:hover
+{
+    color: #E33F1E;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-weight:   bold;
+    margin-bottom: 5px;
+}
+
+h1
+{
+    font-size: 18px;
+    color: #a00d31;
+}
+
+h2
+{ 
+    font-size: 24px;
+}
+
+h3
+{
+    font-size: 14px;
+    color: #FFF;
+}
+
+h4
+{
+    font-size: 14px;
+    color: #000000;
+}
+
+h5
+{
+    font-size: 18px;
+}
+
+h6
+{
+    font-size: 16px;
+}
+
+h1 a
+{
+    color:           #444;
+    text-decoration: none;
+}
+
+pre
+{
+    margin: 20px 0px;
+}
+
+code
+{
+    background: #eee;
+}
+.footer
+{
+    padding: 12px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 0px;
+    background: #666666;
+    color: #FFFFFF;
+}
