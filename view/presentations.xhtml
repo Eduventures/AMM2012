@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>Presentations</h1>
 
 <?r if not session[:logged_in] ?>
@@ -6,6 +7,18 @@ Please login below to view the Presentations.
 </p>
 
 <form id="login" method="post">
+=======
+
+<div style="background-color:yellow !important;">#{flashbox}</div>
+
+
+<?r if not session[:logged_in] or session[:logged_in] == false ?>
+
+	<p>Please login below to view the Presentations. </p>
+
+
+	<form id="login" method="post">
+>>>>>>> ba20cb9d2238ad9bd8cc6adde649d297357029b5
     <label for="password">Password</label>
     <input type="password" name="password" />
 
@@ -23,6 +36,7 @@ You have entered an incorrect password
 <?r end ?>
 </form>
 
+<<<<<<< HEAD
 <?r if session[:logged_in] == true ?>
 
 <p>You have successfuly logged in.
@@ -45,3 +59,12 @@ Click the links below to download the presentations:<br><br>
 <?r end ?>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+=======
+<?r elsif session[:logged_in] == true ?>
+
+ 	<p>This will only be displayed if you are logged in.</p>
+ 	<p>Blah blah blah blah blah blah </p>
+
+ 	<p>Or, you can #{MainController.a('Logout', :preslogout)}</p> 
+<?r end ?>
+>>>>>>> ba20cb9d2238ad9bd8cc6adde649d297357029b5
