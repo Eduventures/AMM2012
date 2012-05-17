@@ -46,20 +46,20 @@ class MainController < Controller
   def presentations
      @title = 'Presentation Materials | Eduventures AMM 2012'
       if  request.post?
-          #flash[:error] = "Post Detected"
-          password = request[:password]
-            if password == '@mm2012'
+        #flash[:error] = "Post Detected"
+        password = request[:password]
+          if password == '@mm2012'
             session[:logged_in] = true
             session[:wrong_pw] = false
             flash[:error] = "Password Accepted"
-              else
-              flash[:error] = "Password Incorrect"
-              session[:wrong_pw] = true
-              session[:logged_in] = false
-              end
           else
-          #flash[:error] = "No Post Detected"
-          #session[:wrong_pw] = false
+            flash[:error] = "Password Incorrect"
+            session[:wrong_pw] = true
+            session[:logged_in] = false
+          end
+      else
+        #flash[:error] = "No Post Detected"
+        session[:wrong_pw] = false
       end
   end
 
