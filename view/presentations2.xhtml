@@ -1,1 +1,18 @@
+
+<?r if not session[:logged_in] ?>
+<p>
+Please <a href="presentations">return to the presentations page</a> to log in 
+</p>
+<?r end ?>
+
+
+<?r if session[:logged_in] == true ?>
+
 <p>Here are the presentations</p>
+
+
+#{MainController.a('Click here to Logout', :logout)}
+
+<?r end ?>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
