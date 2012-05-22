@@ -1,0 +1,37 @@
+
+<?r if not session[:logged_in] ?>
+<p>
+Please <a href="presentations">return to the main presentations page</a> to log in 
+</p>
+<?r end ?>
+
+
+<?r if session[:logged_in] == true ?>
+
+<p>Sponsor Information</p>
+
+<table width="612" border="0">
+  <tr>
+    <td width="63"><strong>Gold</strong></td>
+    <td width="250">Embanet Compass</td>
+    <td width="285">Deltak</td>
+  </tr>
+  <tr>
+    <td><strong>Silver</strong></td>
+    <td>Learning House</td>
+    <td>Educators Serving Educators</td>
+    <td>Pearson</td>
+  </tr>
+  <tr>
+    <td><strong>Bronze</strong></td>
+    <td>Turning Technologies</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<br>
+
+#{MainController.a('Click here to Logout', :logout)}
+
+<?r end ?>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
