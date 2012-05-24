@@ -1,5 +1,10 @@
 <h1>Presentations</h1>
 
+<?r if session[:wrong_pw] == true ?>
+<p>
+You have entered an incorrect password
+</p>
+<?r end ?><br><br>
 
 <?r if not session[:logged_in] or session[:logged_in] == false ?>
 
@@ -17,11 +22,7 @@
     <br><br><br><br><br><br><br><br><br><br><br><br><br>
 <?r end ?>
 
-<?r if session[:wrong_pw] == true ?>
-<p>
-You have entered an incorrect password
-</p>
-<?r end ?>
+
 
 </form>
 
