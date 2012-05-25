@@ -1,0 +1,47 @@
+<h1>Academic Leadership Forum Case Study</h1>
+
+<?r if session[:wrong_pw] == true ?>
+<p>
+You have entered an incorrect password
+</p>
+<?r end ?>
+
+<?r if not session[:logged_in] or session[:logged_in] == false ?>
+
+    <p>Please login below to view the Case Study. </p>
+
+
+    <form id="login" method="post">
+    <label for="password">Password</label>
+    <input type="password" name="password" />
+
+    <br /><br />
+
+    <input type="submit" value="Login" />
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+<?r end ?>
+
+
+
+</form>
+
+
+<?r if session[:logged_in] == true ?>
+
+<p>
+Paul Levy: Taking Charge of the Beth Israel Deaconess Medical Center<br><br>
+
+Author: David A. Garvin; Michael A. Roberto<br><br>
+
+Description: On January 7, 2002, Paul Levy became CEO of the Beth Israel Deaconess Medical Center, a troubled organization, in serious financial difficulty. This case describes the situation Levy inherited, his negotiations prior to taking the job, and his first six months as CEO.<br><br>
+
+<a href="https://archive.harvardbusiness.org/cla/web/pl/product.seam?c=19384&i=19386&cs=b229cb5569f3d82f4106c41892098181" target="_blank">Click here to view the case study</a>
+</p>
+
+
+#{MainController.a('Click here to Logout', :logout2)}
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<?r end ?>
+

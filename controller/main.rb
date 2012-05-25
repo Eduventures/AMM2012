@@ -63,6 +63,26 @@ class MainController < Controller
       end
   end
 
+  def alforum
+     @title = 'AL Forum Case Study | Eduventures AMM 2012'
+      if  request.post?
+        #flash[:error] = "Post Detected"
+        password = request[:password]
+          if password == 'bidmcstudy'
+            session[:logged_in] = true
+            session[:wrong_pw] = false
+            flash[:error] = "Password Accepted"
+          else
+            flash[:error] = "Password Incorrect"
+            session[:wrong_pw] = true
+            session[:logged_in] = false
+          end
+      else
+        #flash[:error] = "No Post Detected"
+        session[:wrong_pw] = false
+      end
+  end
+
   # the string returned at the end of the function is used as the html body
   # if there is no template for the action. if there is a template, the string
   # is silently ignored
