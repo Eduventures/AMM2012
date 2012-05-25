@@ -18,6 +18,11 @@ class MainController < Controller
   redirect rs (:presentations)
   end
 
+  def logout2
+  session[:logged_in] = false
+  session[:wrong_pw] = false
+  redirect rs (:alforum)
+  end
 
   def index
     @title = 'Eduventures AMM 2012'
