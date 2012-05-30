@@ -69,7 +69,7 @@ class MainController < Controller
   end
 
   def alforum
-     @title = 'AL Forum Case Study | Eduventures AMM 2012'
+     @title = 'Case Study Workshop: Leadership and Organizational Change'
       if  request.post?
         #flash[:error] = "Post Detected"
         password = request[:password]
