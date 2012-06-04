@@ -1,0 +1,303 @@
+<h1>Sessions</h1>
+
+<?r if session[:wrong_pw] == true ?>
+<p>
+You have entered an incorrect password
+</p>
+<?r end ?>
+
+<?r if not session[:logged_in] or session[:logged_in] == false ?>
+
+    <p>Please login below to view the Sessions </p>
+
+
+    <form id="login" method="post">
+    <label for="password">Password</label>
+    <input type="password" name="password" />
+
+    <br /><br />
+
+    <input type="submit" value="Login" />
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+<?r end ?>
+
+
+
+</form>
+
+
+<?r if session[:logged_in] == true ?>
+<center><span class="boldfont"><br>
+We thank the following sponsors for making the Eduventures Annual Member Meeting possible</span></center><br><br>
+
+
+<table width="612" border="0">
+  <tr>
+    <td width="63"><strong>Gold</strong></td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Embanet Compass &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deltak</td>
+  </tr>
+  <tr>
+    <td><strong>Silver</strong></td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="learninghouse">Learning House</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Educators Serving Educators &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pearson</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>Bronze</strong></td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Turning Technologies</td>
+  </tr>
+</table>
+<br>
+
+
+
+
+
+<style type="text/css">
+p {
+    color: #000000;
+    font-size: 12px;
+    line-height: 12px;
+}
+.boldfont
+{
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    }
+}
+.time {
+    font-size: 8px;
+}
+.pad, .pad a {
+    padding:2px;
+    color: #000000;
+}
+</style>
+
+<table width="624" border="1" bordercolor="#000000">
+  <tr>
+    <td colspan="7" align="center" valign="bottom" class="pad"><span class="boldfont">Day 1 Sessions<br>
+      <br>
+    </span></td>
+  </tr>
+  <tr>
+    <td width="95" align="center" valign="middle" bgcolor="#FFFFFF"><span class="boldfont">CPE-LC</span></td>
+    <td width="88" align="center" valign="middle" bgcolor="#FFFFFF"><span class="boldfont">OHE-LC</span></td>
+    <td width="81" align="center" valign="middle" bgcolor="#FFFFFF"><span class="boldfont">DEV-LC</span></td>
+    <td width="90" align="center" valign="middle" bgcolor="#FFFFFF"><span class="boldfont">EM-LC</span></td>
+    <td width="72" align="center" valign="middle" bgcolor="#FFFFFF"><span class="boldfont">AL-LC</span></td>
+    <td width="75" align="center" valign="middle" bgcolor="#FFFFFF"><span class="boldfont">AIE-LC</span></td>
+    <td align="center" valign="middle" bgcolor="#FFFFFF"><span class="boldfont">SOE-LC</span></td>
+  </tr>
+  <tr>
+    <td height="128" align="center" valign="middle" bgcolor="#EBFFFF" class="pad"><p class="pad">Continuing and Professional Education – Developments in 2012    and Latest Consumer Findings<br />
+    (Plaza A)</p>
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br>
+    </td>
+    <td align="center" valign="middle" bgcolor="#CCECFF" class="pad"><p class="pad">Platform    Innovation - What's Backward, Standard and Cutting Edge<br />
+    (Seaport A&amp;B)</p>
+
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br>
+    </td>
+    <td align="center" valign="middle" bgcolor="#A5D6E3" class="pad"><p class="pad">Top Ten Things    Advancement Leaders Need to Know this Year <br />
+    (Lighthouse 1)</p>
+
+    <a href="../DEV_AMM12_Top_10_Things_Advancement_Leaders_Need_to_Know.pdf">Presentations</a><br>
+    <a href="#">Feedback</a><br>
+    </td>
+    <td align="center" valign="middle" bgcolor="#99CCFF" class="pad"><p class="pad"><br>
+      Enrollment    Management Welcome and Introductions: The Higher Education    Accountability    Movement and What It    Means for Enrollment Managers<br />
+    (Constitution)
+    </p>
+<a href="../EM_AMM_2012_Opening_Presentation.pdf">Presentations</a><br>
+    <a href="#">Feedback</a><br><br>
+
+    </td>
+    <td align="center" valign="middle" bgcolor="#93CDDD" class="pad"><p class="pad">The Evolving    Role of University Leaders – Leading and Negotiating Change <br />
+    (Seaport C)</p>
+
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+    <td align="center" valign="middle" bgcolor="#8DB4E3" class="pad"><p class="pad">Alumni    Outcomes: The Ultimate Measure of Institutional Effectiveness?<br>
+    (Liberty) </p>
+
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+    <td align="center" valign="middle" bgcolor="#538ED5" class="pad"><p class="pad">The Top Ten    Things SOE Deans Need to Know this Year<br />
+    (Flagship AB)</p>
+
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+  </tr>
+  <tr>
+    <td colspan="7" align="center" valign="middle" bgcolor="#FFFFFF" class="pad"><a href="#"></a></td>
+  </tr>
+  <tr>
+    <td height="92" align="center" valign="middle" bgcolor="#EBFFFF" class="pad"><p><br>
+    Continuing    Education Performance Benchmarking – Debating a New Eduventures    Initiative<br>
+    (Plaza A)
+    <br>
+    </p>
+
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br><br></td>
+    <td align="center" valign="middle" bgcolor="#CCECFF" class="pad"><p><br>
+      Online Higher    Education Market Update – Developments in 2012 and Latest Consumer     Findings<br />
+    (Plaza B)
+<br>
+    </p>
+
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br><br></td>
+    <td colspan="2" align="center" valign="middle" bgcolor="#A5D6E3" class="pad"><p>Marketing and Branding Across Your Institution:    How Fundraisers and Enrollment Managers Can <br>
+      Work Together Effectively <br />
+      (Joint session with DEV-LC<br>
+and EM-LC) (Lighthouse 1)</p>
+
+<a href="../EM_DEV_Billion_Dollar_Brands.pdf">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+    <td colspan="2" align="center" valign="middle" bgcolor="#93CDDD" class="pad"><p>Creating the Assessment-Focused Institution:<br>
+Nuts and Bolts of the<br>
+Assessment Operation<br>
+    (Joint session with AL-LC<br>
+and AIE-LC)                        (Seaport C)</p>
+
+ <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+    <td width="77" align="center" valign="middle" bgcolor="#538ED5" class="pad"><p>The    Evolving Market for Initial Teacher Preparation<br />
+    (Flagship AB)</p>
+
+    <a href="../SOE_CR_Understanding_the_Market_for_Initial_Teacher_Preparation.pdf">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+  </tr>
+  <tr>
+    <td colspan="7" align="center" class="pad">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="7" align="center" valign="bottom" class="pad"><p><span class="boldfont">Day 2 Sessions</span></p></td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle" bgcolor="#FFFFFF"><span class="boldfont">CPE-LC</span></td>
+    <td align="center" valign="middle" bgcolor="#FFFFFF"><span class="boldfont">OHE-LC</span></td>
+    <td align="center" valign="middle" bgcolor="#FFFFFF"><span class="boldfont">DEV-LC</span></td>
+    <td align="center" valign="middle" bgcolor="#FFFFFF"><span class="boldfont">EM-LC</span></td>
+    <td align="center" valign="middle" bgcolor="#FFFFFF"><span class="boldfont">AL-LC</span></td>
+    <td align="center" valign="middle" bgcolor="#FFFFFF"><span class="boldfont">AIE-LC</span></td>
+    <td align="center" valign="middle" bgcolor="#FFFFFF"><span class="boldfont">SOE-LC</span></td>
+  </tr>
+  <tr>
+    <td height="88" align="center" valign="middle" bgcolor="#EBFFFF" class="pad"><p class="pad">Understanding Program Success – Predictive Patterns in    Enrollment and Employment Data   <br />
+    (Plaza A)</p>
+
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+    <td align="center" valign="middle" bgcolor="#CCECFF" class="pad"><p class="pad">Making Online Accountable – Regulation Update, U.S. New    Rankings and School Initiatives<br />
+    (Plaza B)</p>
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br><br></td>
+    <td align="center" valign="middle" bgcolor="#A5D6E3" class="pad"><p class="pad"><br>
+      Unlocking    Innovation: How DEV-LC Members are Using Fresh Approaches to Address Common    Challenges<br />
+    (Lighthouse 1)</p>
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br><br></td>
+    <td align="center" valign="middle" bgcolor="#99CCFF" class="pad"><p class="pad">Developing    a Cost Effective Social Media Strategy<br>
+    (Constitution)</p>
+    <a href="../EM_AMM_2012_Developing_an_Effective_Social_Media_Strategy.pdf">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+    <td align="center" valign="middle" bgcolor="#93CDDD" class="pad"><p class="pad"><a href="#">Opportunity    to Attend Cross-LC Sessions</a></p>
+
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+    <td colspan="2" align="center" valign="middle" bgcolor="#8DB4E3" class="pad"><p class="pad">Making Use of <br>
+      Assessment Data <br>
+      (Joint session with    AIE-LC<br>
+and SOE-LC)
+    (Flagship AB)</p>
+    <a href="../SOE_AMM_Making_Use_of_Assessment_Data.pdf">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+  </tr>
+  <tr>
+    <td colspan="7" align="center" valign="middle" bgcolor="#FFFFFF" class="pad">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="78" align="center" valign="middle" bgcolor="#EBFFFF" class="pad"><p>Innovative Continuing Education Structures, Practices &amp;    Performance<br>
+    (Plaza A)</p>
+
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+    <td align="center" valign="middle" bgcolor="#CCECFF" class="pad"><p>Online Higher Education: Performance Benchmarking. Latest    Results from the Eduventures Project <br />
+    (Plaza B)</p>
+
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+    <td align="center" valign="middle" bgcolor="#A5D6E3" class="pad"><p>Leveraging New    Technologies in Advancement<br>
+    (Lighthouse 1)</a></p>
+
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+    <td align="center" valign="middle" bgcolor="#99CCFF" class="pad"><p>Small Group    Discussions on Current Topics<br>
+    (Constitution)</p>
+
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+    <td colspan="2" align="center" valign="middle" bgcolor="#93CDDD" class="pad"><p>Measuring, Monitoring, and Conveying the Story of Student Outcomes
+    (Joint Session with <br>
+    AL-LC
+and AIE-LC)<br>
+(Seaport C)</p>
+
+<a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+    <td align="center" valign="middle" bgcolor="#538ED5" class="pad"><p>Identifying Common SOE Challenges and Building the Research Agenda for the Schools of Education Learning Collaborative             (Flagship AB)</p>
+
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+  </tr>
+  <tr>
+    <td height="12" colspan="7" align="center" valign="middle" bgcolor="#FFFFFF" class="pad">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="85" align="center" valign="middle" bgcolor="#EBFFFF" class="pad"><p>Learning Collaborative<br>
+Wrap-up<br />
+    (Plaza A)</p>
+
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+    <td align="center" valign="middle" bgcolor="#CCECFF" class="pad"><p>Learning Collaborative Wrap-up<br />
+    (Plaza B)</p>
+
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+    <td align="center" valign="middle" bgcolor="#A5D6E3" class="pad"><p>Implementing    Donor-Driven Fundraising Strategies: A Closer Look at the 2012 Alumni Pulse    Survey (Lighthouse 1)</p>
+
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br><br></td>
+    <td align="center" valign="middle" bgcolor="#99CCFF" class="pad"><p>Learning    Collaborative <br>Wrap-up<br />
+    (Constitution)</p>
+
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+    <td align="center" valign="middle" bgcolor="#93CDDD" class="pad"><p>Learning    Collaborative Wrap-up <br />
+    (Seaport C)</p>
+
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+    <td align="center" valign="middle" bgcolor="#8DB4E3" class="pad"><p>Learning Collaborative Wrap-up<br />
+    (Liberty)</p>
+
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+    <td align="center" valign="middle" bgcolor="#538ED5" class="pad"><p>Learning    Collaborative Wrap-up<br>
+    (Flagship AB)</p>
+
+    <a href="#">Presentations</a><br>
+    <a href="#">Feedback</a><br></td>
+  </tr>
+</table>
+<br><br>
+#{MainController.a('Click here to Logout', :logout)}
+
+<?r end ?>

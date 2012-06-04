@@ -15,7 +15,7 @@ class MainController < Controller
   def logout
   session[:logged_in] = false
   session[:wrong_pw] = false
-  redirect rs (:presentations)
+  redirect rs (:sessions)
   end
 
   def logout2
@@ -48,8 +48,8 @@ class MainController < Controller
     @title = 'Visiting Boston | Eduventures AMM 2012'
   end
 
-  def presentations
-     @title = 'Presentation Materials | Eduventures AMM 2012'
+  def sessions
+     @title = 'Session Materials | Eduventures AMM 2012'
       if  request.post?
         #flash[:error] = "Post Detected"
         password = request[:password]
