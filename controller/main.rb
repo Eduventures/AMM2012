@@ -24,6 +24,10 @@ class MainController < Controller
   redirect rs (:alforum)
   end
 
+  def presentations
+  redirect rs (:sessions)
+  end
+
   def index
     @title = 'Eduventures AMM 2012'
   end
