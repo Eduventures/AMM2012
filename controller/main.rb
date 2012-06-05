@@ -52,6 +52,10 @@ class MainController < Controller
     @title = 'Visiting Boston | Eduventures AMM 2012'
   end
 
+  def bios
+    @title = 'Biographies | Eduventures AMM 2012'
+  end
+
   def sessions
      @title = 'Session Materials | Eduventures AMM 2012'
       if  request.post?
