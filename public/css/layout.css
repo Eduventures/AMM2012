@@ -40,6 +40,13 @@
     width: 920px;
 }
 
+#top ul
+    {
+    float:        left;
+    margin-right: 0px;
+    margin-left: -5px;
+    }
+
 <![endif]-->
 
 #container
