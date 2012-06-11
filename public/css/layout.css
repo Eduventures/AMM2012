@@ -43,8 +43,8 @@
 #top ul
     {
     float:        left;
-    margin-right: 0px;
-    margin-left: -5px;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
     }
 
 <![endif]-->
